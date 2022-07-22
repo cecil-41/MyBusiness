@@ -1,0 +1,63 @@
+.social-icon
+{
+    background-color: #0984e3;
+    border-bottom: 3px solid #833471;
+    padding: 10px;
+    color: transparent;
+}
+.social-icon a{
+    color: white;
+    font-weight: 600;
+    font-size: 0.89rem;
+}
+.social-icon a:hover{
+    color: #833471;
+}
+/*Navbar*/
+.NavBar ul li a{
+    font-weight: 600;
+    font-size: 0.89rem;
+}
+.NavBar ul li a:hover{
+    font-weight: 700;
+    font-size: 0.89rem;
+    color: #833471;
+}
+.bottom-footer{
+    background-color:#ffffff;
+    color: black;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.Boddy h1{
+    font-size: 40px;
+    font-weight: 700;
+    background-image:conic-gradient(white 30%, #ee4b2b 40%, #ee4b2b 70%, #00c2cb 80%, #553c9a);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.Boddy h5{
+    font-weight: 600;
+    background-image: conic-gradient(white 30%, white 40%, white 70%, #ff6348 80%, #0984e3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.Boddy .btn-primary{
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.89rem;
+    width:25%;
+}
+.Boddy .btn-primary:hover{
+    font-weight: 700;
+    font-size: 1rem;
+    color: #833471;
+}
