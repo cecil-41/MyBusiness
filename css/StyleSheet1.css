@@ -10,10 +10,20 @@
     font-weight: 600;
     font-size: 0.89rem;
 }
+#TopHeader a:hover{
+    color: #fbc531;
+    font-weight: 700;
+    font-size: 0.89rem;
+}
 /*Navbar*/
 .NavBar ul li a{
     font-weight: 600;
     font-size: 0.89rem;
+}
+.NavBar ul li a:hover{
+    font-weight: 600;
+    font-size: 0.89rem;
+    color: white;
 }
 /* END TOP HEADER */
 
