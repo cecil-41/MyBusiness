@@ -21,9 +21,9 @@
     font-size: 0.89rem;
 }
 .NavBar ul li a:hover{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.89rem;
-    color: white;
+    color:#6c5ce7;
 }
 /* END TOP HEADER */
 
@@ -45,23 +45,24 @@
     list-style-type: none;
 }
 .top-footer a:hover{
-    color:#ffeaa7;
+    color:#fbc531;
     font-weight: 600;
     font-size: 0.89rem;
 }
 .social-links{
     background-color: white;
-    color: #e84118;
-    border-bottom: 1px solid silver;
-    border-top: 1px solid silver;
     padding: 10px;
+   
 }
-
+.social-links a{
+    color: #6c5ce7;
+}
+.social-links a:hover{
+    color: #2e86de;
+}
 .bottom-footer{
     background-color: #273c75;
     color: white;
     font-weight: 600;
-    
-
 }
 /* END FOOTER*/
