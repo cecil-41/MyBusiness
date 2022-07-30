@@ -58,15 +58,8 @@
 	letter-spacing: 1px;
 }
 .social-links{
-    background-color: white;
+    background-color: #c8d6e5;
     padding: 10px;
-   
-}
-.social-links a{
-    color: #6c5ce7;
-}
-.social-links a:hover{
-    color: #2e86de;
 }
 .bottom-footer{
     background-color: #273c75;
@@ -110,4 +103,5 @@
     font-weight: 600;
     font-size: 0.89rem;
 }
+
 /* END BODY*/
