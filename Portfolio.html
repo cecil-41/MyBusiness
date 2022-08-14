@@ -10,12 +10,13 @@
     <link rel="stylesheet"  href="fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
     <!-- sweetalert css -->
     <link rel="stylesheet" href="datatable/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="s">
     <!--Custome css-->
     <link href="css/Portifolio.css" rel="stylesheet">
     <!--Page Icon-->
     <link rel="icon" href="img" type="image/x-icon"/>
   </head>
-  <body class="">
+  <body>
     <!--Header-->
     <header class="sticky-top">
       <!--Top Header-->
@@ -56,21 +57,26 @@
               <li class="nav-item">
                 <a class="nav-link" href="Default.html">Home</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Portfolio.html">Porfolio</a>
+              </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active"aria-current="page" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  About
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="VastTech.html">VastTech</a></li>
-                  <li><a class="dropdown-item" href="Service.html">Services</a></li>
-                  <li><a class="dropdown-item" href="#">Projects</a></li>
-                  <li><a class="dropdown-item active" aria-current="page" href="Portfolio.html">Porfolio</a></li>
+                  <li><a class="dropdown-item" href="#">Tutorials</a></li>
+                  <li><a class="dropdown-item" href="#">Web Designing</a></li>
+                  <li><a class="dropdown-item" href="#">Graphic Designing</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Founders</a></li>
+                  <li><a class="dropdown-item" href="#">Photoshop</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link"  href="Contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="About.html">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sign-Up</a>
@@ -82,19 +88,98 @@
     </div>
     </header>
     <!-- breadcrumb -->
-    <div class="breadcrumb1 container-fluid">
-      <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="Default.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
-        </ol>
-      </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="breadcrumb1 container-fluid mt-2">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="Default.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
+              </ol>
+              <hr>
+            </nav>
+          </div>
+        </div>
+      </div>
     </div>
     <!--Body-->
-    
+    <div class="container p-3">
+      <div class="row mx-auto">
+        <!-- First Card -->
+        <div class="col-md-4 p-2">
+          <div class="card">
+            <img src="img/web.png" class="card-img-top" alt="..." height="290">
+            <div class="card-body text-center">
+              <i>Dynamic Website</i>
+              <h5 class="card-title">Final Year Project</h5>
+              <p class="card-text text-start">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div>
+                <p>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#card1" aria-expanded="false" aria-controls="card1">
+                    Read More
+                  </button>
+                </p>
+                <div class="collapse" id="card1">
+                  <div class="text-start">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second card -->
+        <div class="col-md-4 p-2">
+          <div class="card">
+            <img src="img/database-storage.png" class="card-img-top" alt="..." height="290">
+            <div class="card-body text-center">
+              <i>Database Designing</i>
+              <h5 class="card-title">Information Sytems</h5>
+              <p class="card-text text-start">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div>
+                <p>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#card2" aria-expanded="false" aria-controls="card2">
+                    Read More
+                  </button>
+                </p>
+                <div class="collapse" id="card2">
+                  <div class="text-start">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Third card -->
+        <div class="col-md-4 p-2">
+          <div class="card">
+            <img src="img/aspnet.jpg" class="card-img-top" alt="..." height="290">
+            <div class="card-body text-center">
+              <i>Dynamic Website</i>
+              <h5 class="card-title">Software Development</h5>
+              <p class="card-text text-start">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div>
+                <p>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#card3" aria-expanded="false" aria-controls="card3">
+                    Read More
+                  </button>
+                </p>
+                <div class="collapse" id="card3">
+                  <div class="text-start">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <!--Bottom footer fixed bottom-->
-    <div class="bottom-footer fixed-bottom">
+    <div class="bottom-footer">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center pt-2 pb-2">
