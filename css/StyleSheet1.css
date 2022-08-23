@@ -86,5 +86,25 @@
     font-weight: 600;
     font-size: 0.89rem;
 }
-
 /* END BODY*/
+
+/* START ABOUT PAGE */
+#aboutsect h2{
+	font-size: 22px;
+	line-height: 40px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: 'Orienta', sans-serif;
+	letter-spacing: 1px;
+    color: #6c5ce7;
+}
+#aboutsect h5{
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-family: 'Orienta', sans-serif;
+	letter-spacing: 1px;
+    color: #6c5ce7;
+}
+
+/* END ABOUT PAGE */
