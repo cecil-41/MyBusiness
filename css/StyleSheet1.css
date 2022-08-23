@@ -106,5 +106,19 @@
 	letter-spacing: 1px;
     color: #6c5ce7;
 }
-
+.canvas{
+    font-size: 22px;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-family: 'Orienta', sans-serif;
+	letter-spacing: 1px;
+    color: #6c5ce7;
+}
+.canvasbutton{
+    font-size: 22px;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-family: 'Orienta', sans-serif;
+	letter-spacing: 1px;
+}
 /* END ABOUT PAGE */
