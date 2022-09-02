@@ -114,18 +114,8 @@
               <i>Dynamic Website</i>
               <h5 class="card-title">Final Year Project</h5>
               <p class="card-text text-start">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <div>
-                <p>
-                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#card1" aria-expanded="false" aria-controls="card1">
-                    Read More
-                  </button>
-                </p>
-                <div class="collapse" id="card1">
-                  <div class="text-start">
-                    Some placeholder content for the collapse component. This panel is hidden by index but revealed when the user activates the relevant trigger.
-                  </div>
-                </div>
-              </div>
+              <p class="moretext1 text-start">Some placeholder content for the collapse component. This panel is hidden by index but revealed when the user activates the relevant trigger.</p>
+              <a class="moreless1 btn btn-primary" href="#!">Read more</a>
             </div>
           </div>
         </div>
@@ -137,18 +127,8 @@
               <i>Database Designing</i>
               <h5 class="card-title">Information Sytems</h5>
               <p class="card-text text-start">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <div>
-                <p>
-                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#card2" aria-expanded="false" aria-controls="card2">
-                    Read More
-                  </button>
-                </p>
-                <div class="collapse" id="card2">
-                  <div class="text-start">
-                    Some placeholder content for the collapse component. This panel is hidden by index but revealed when the user activates the relevant trigger.
-                  </div>
-                </div>
-              </div>
+              <p class="moretext2 text-start">Some placeholder content for the collapse component. This panel is hidden by index but revealed when the user activates the relevant trigger.</p>
+              <a class="moreless2 btn btn-primary" href="#!">Read more</a>
             </div>
           </div>
         </div>
@@ -160,18 +140,8 @@
               <i>Dynamic Website</i>
               <h5 class="card-title">Software Development</h5>
               <p class="card-text text-start">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <div>
-                <p>
-                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#card3" aria-expanded="false" aria-controls="card3">
-                    Read More
-                  </button>
-                </p>
-                <div class="collapse" id="card3">
-                  <div class="text-start">
-                    Some placeholder content for the collapse component. This panel is hidden by index but revealed when the user activates the relevant trigger.
-                  </div>
-                </div>
-              </div>
+              <p class="moretext3 text-start">Some placeholder content for the collapse component. This panel is hidden by index but revealed when the user activates the relevant trigger.</p>
+              <a class="moreless3 btn btn-primary" href="#!">Read more</a>
             </div>
           </div>
         </div>
@@ -189,12 +159,43 @@
       </div>
     </div>
     </section>
-    
+    <!-- jquery -->
+    <script src="./js/jquery-3.6.1.min.js"></script>
     <!-- bootstrap js -->
     <script src="Bootstrap/bootstrap.bundle.min.js"></script>
     <!-- datatables js -->
     <script src="datatable/jquery.dataTables.min.js"></script>
     <!-- sweetalert js -->
     <script src="sweetalert/sweetalert.min.js"></script>
+    <script>
+      // The function toggles more (hidden) text when the user clicks on "Read more". The IF ELSE statement ensures that the text 'read more' and 'read less' changes interchangeably when clicked on.
+      // card1 function
+      $('.moreless1').click(function() {
+          $('.moretext1').slideToggle();
+          if ($('.moreless1').text() == "Read more") {
+              $(this).text("Read less")
+          } else {
+              $(this).text("Read more")
+          }
+      });
+      // card1 function
+      $('.moreless2').click(function() {
+          $('.moretext2').slideToggle();
+          if ($('.moreless2').text() == "Read more") {
+              $(this).text("Read less")
+          } else {
+              $(this).text("Read more")
+          }
+      });
+      // card3 function
+      $('.moreless3').click(function() {
+          $('.moretext3').slideToggle();
+          if ($('.moreless3').text() == "Read more") {
+              $(this).text("Read less")
+          } else {
+              $(this).text("Read more")
+          }
+      });
+  </script>
   </body>
 </html>

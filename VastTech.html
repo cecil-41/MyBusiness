@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Read More</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+    
+    <style>
+        #section {
+        width: 500px;
+        height: 400px;
+        word-wrap: break-word;
+        }
+
+        .moretext {
+        display: none;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="section">
+                    <div class="article">
+                      <p>Bacon ipsum dolor amet sirloin jowl turducken pork loin pig pork belly, chuck cupim tongue beef doner tri-tip pancetta spare ribs porchetta. 
+                      </p>
+                      <p class="moretext">
+                        Brisket ball tip cow sirloin. Chuck porchetta kielbasa pork chop doner sirloin, bacon beef brisket ball tip short ribs. 
+                      </p>
+                    </div>
+                    <a class="moreless-button" href="#">Read more</a>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- jquery -->
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <!-- bootstrap css -->
+    <script src="./Bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Read More function -->
+    <script>
+        // The function toggles more (hidden) text when the user clicks on "Read more". The IF ELSE statement ensures that the text 'read more' and 'read less' changes interchangeably when clicked on.
+        $('.moreless-button').click(function() {
+            $('.moretext').slideToggle();
+            if ($('.moreless-button').text() == "Read more") {
+                $(this).text("Read less")
+            } else {
+                $(this).text("Read more")
+            }
+        });
+    </script>
+  </body>
+</html>

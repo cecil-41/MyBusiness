@@ -73,5 +73,14 @@
 /* END FOOTER*/
 
 /* START BODY*/
-
+/* blocking visibility of read more text */
+.moretext1 {
+    display: none;
+}
+.moretext2 {
+    display: none;
+}
+.moretext3 {
+    display: none;
+}
 /* END BODY*/
