@@ -122,39 +122,42 @@
                 </div>
                 
             </div>
+            
             <div class="col-md-6 pt-md-1 pt-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row p-2">
-                            <div class="col-md-6 pb-2">
-                                <label for="fullname" class="form-label"><i>Full Name</i></label>
-                                <input type="text" class="form-control" id="fullname" placeholder="Enter your full name">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="Email" class="form-label"><i>Email</i></label>
-                                <input type="email" class="form-control" id="Email" placeholder="Enter your email">
-                            </div>
-                            
-                        </div>
-                        <div class="row p-2">
-                            <div class="col-12">
-                                <label for="Subject" class="form-label"><i>Subject</i></label>
-                                <input type="text" class="form-control" id="Subject" placeholder="Enter the subject">
-                            </div>
-                        </div>
-                        <div class="row p-2">
-                            <div class="col-12">
-                                <label for="Message" class="form-label"><i>Message</i></label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-                            </div>
-                        </div>
-                        <div class="row p-2">
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </div>
+              <div class="card">
+                  <div class="card-body">
+                    <!-- form -->
+                    <form class="needs-validation" action="register.php" method="get" novalidate>
+                      <div class="row p-2">
+                          <div class="col-md-6 pb-2 form-outline">
+                              <label for="fullname" class="form-label"><i>Full Name</i></label>
+                              <input type="text" class="form-control" id="fullname" placeholder="Enter your full name" required>
+                          </div>
+                          <div class="col-md-6">
+                              <label for="Email" class="form-label"><i>Email</i></label>
+                              <input type="email" class="form-control" id="Email" placeholder="Enter your email" autocomplete="off" required>
+                          </div>
+                      </div>
+                      <div class="row p-2">
+                          <div class="col-12">
+                              <label for="Subject" class="form-label"><i>Subject</i></label>
+                              <input type="text" class="form-control" id="Subject" placeholder="Enter the subject" required>
+                          </div>
+                      </div>
+                      <div class="row p-2">
+                          <div class="col-12">
+                              <label for="message" class="form-label"><i>Message</i></label>
+                              <textarea class="form-control" id="message" rows="4" required></textarea>
+                          </div>
+                      </div>
+                      <div class="row p-2">
+                          <div class="col-12 text-center">
+                              <button class="btn btn-primary" type="submit">Send Message</button>
+                          </div>
+                      </div>
+                    </form>
                   </div>
+                </div>
             </div>
         </div>
     </section>
@@ -171,12 +174,32 @@
       </div>
     </div>
     </section>
-    
+    <!-- validation js -->
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+    </script>
     <!-- bootstrap js -->
     <script src="Bootstrap/bootstrap.bundle.min.js"></script>
     <!-- datatables js -->
     <script src="datatable/jquery.dataTables.min.js"></script>
     <!-- sweetalert js -->
     <script src="sweetalert/sweetalert.min.js"></script>
+    
   </body>
 </html>
