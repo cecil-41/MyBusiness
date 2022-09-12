@@ -127,7 +127,7 @@
               <div class="card">
                   <div class="card-body">
                     <!-- form -->
-                    <form class="needs-validation" action="register.php" method="get" novalidate>
+                    <form class="needs-validation" action="" method="get" novalidate>
                       <div class="row p-2">
                           <div class="col-md-6 pb-2 form-outline">
                               <label for="fullname" class="form-label"><i>Full Name</i></label>
@@ -200,6 +200,12 @@
     <script src="datatable/jquery.dataTables.min.js"></script>
     <!-- sweetalert js -->
     <script src="sweetalert/sweetalert.min.js"></script>
-    
+    <script>
+      // prevent form submit
+      const form = document.querySelector("form");
+      form.addEventListener('submit', function (e) {
+          e.preventDefault();
+      });
+    </script>
   </body>
 </html>
