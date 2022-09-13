@@ -38,12 +38,10 @@
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
-    animation: marquee 30s linear infinite;
+    animation: marquee 20s linear infinite;
+    animation-delay: 1s;
 }
 
-.marquee2 {
-    animation-delay: 14s;
-}
 
 @keyframes marquee {
     0% {
