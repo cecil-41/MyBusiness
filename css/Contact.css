@@ -25,6 +25,34 @@
     font-size: 0.89rem;
     color:#6c5ce7;
 }
+/* Sliding text */
+.marquee-container {
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+}
+.marquee {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee2 {
+    animation-delay: 14s;
+}
+
+@keyframes marquee {
+    0% {
+        left: 90%;
+    }
+    100% {
+        left: -100%
+    }
+}
 /* END TOP HEADER */
 
 /* START FOOTEER*/
@@ -105,4 +133,4 @@
 }
 
 /* END BODY*/
-/* VALIDATION */
+
