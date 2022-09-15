@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutorials</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+    <link href="css/StyleSheet1.css" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
+  </head>
+  <body>
+    <!--Header-->
+    <header class="sticky-top">
+      <!--Top Header-->
+      <div id="TopHeader" class="p-3">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 text-start">
+                <a href="mailto:cecilbennett41@gmail.com"><i class="fa-solid fa-envelope fa-lg p-1"></i>cecilbennett41@gmail.com</a>
+              </div>
+              <div class="col-md-6 text-end col-12 d-none d-md-block">
+                  <a href="#"><i class="fa-brands fa-facebook fa-2x p-1"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram fa-2x p-1"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter fa-2x p-1"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin fa-2x p-1"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube fa-2x p-1"></i></a>
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <!-- Navigation Bar -->
+    <div class="NavBar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h4>VastTech</h4> 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Portfolio.html">Porfolio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Tutorials</a></li>
+                  <li><a class="dropdown-item" href="#">Web Designing</a></li>
+                  <li><a class="dropdown-item" href="#">Graphic Designing</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Photoshop</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="Contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="About.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sign-Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    </header>
+    
+    <!-- Body -->
+    <!-- slideshow -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/slideshow/slide1.jpg" class="d-block w-100" alt="slideshow">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slideshow/slide2.jpg" class="d-block w-100" alt="slideshow">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slideshow/slide5.jpg" class="d-block w-100" alt="slideshow">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slideshow/slide4.jpg" class="d-block w-100" alt="slideshow">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery js-->
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./Bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- slideshow interval function-->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.carousel').carousel({
+          interval: 1600
+        })
+      });
+    </script>
+  </body>
+</html>
