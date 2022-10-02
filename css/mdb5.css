@@ -21,7 +21,7 @@ z-index: 600;
 
 @media (max-width: 991.98px) {
 .sidebar {
-width: 50%;
+width: 70%;
 }
 }
 .sidebar .active {
