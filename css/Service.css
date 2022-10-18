@@ -10,10 +10,25 @@
     color: #2e86de;
 }
 .head5{
-    font-size: 20px;
-	font-weight: 400;
+    font-size: 18px;
+	font-weight: 500;
 	text-transform: uppercase;
 	font-family: 'Orienta', sans-serif;
     color: #2e86de;
-    text-decoration: underline;
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-thickness: 2px;
+	border-bottom: 10px;
+	
+}
+/* subscription button */
+.button{
+	border-bottom-right-radius:25px ;
+	border-top-left-radius: 25px;
+	
+}
+
+.button:hover{
+	background-color: #2e86de;
+	color: white;
 }
